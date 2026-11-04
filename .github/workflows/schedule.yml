@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: "0 */2 * * *"
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -36,4 +39,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./m3u
           enable_jekyll: true
-          cname: iptv.sachindev.com
+          cname: sachindev.com
