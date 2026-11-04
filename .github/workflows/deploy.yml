@@ -3,6 +3,8 @@ name: update script
 on:
   push:
     branches: [main]
+permissions:
+  contents: write
 
 jobs:
   build:
